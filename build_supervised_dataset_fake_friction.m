@@ -8,8 +8,6 @@
 % inc_min_step = 2
 % Duration until last measurement
 % prev_time = 60
-% Set offset, this defines the forecast model (30 min, 60 min, 90 min...)
-% offset_time = loop
 % Set minimum quality level
 % min_quality = 4
 % Set maximum duration since last measurement in hours
@@ -17,8 +15,6 @@
 % Set search region (for prev. measured friction values)
 % search_region = 0.04
 
-%% For extracting different setups
-for loop = 0:30:0
 
 
 %%
@@ -52,14 +48,12 @@ endtime = '2016-11-15 06:06:07';
 inc_min_step = 2;
 % Duration until last measurement (default 60 min)
 prev_time = 60;
-% Set offset, this defines the forecast model (30 min, 60 min, 90 min...)
-offset_time = loop;
-% Set minimum quality level
+% Set minimum quality level (inactive)
 min_quality = 4;
-% Set maximum duration since last measurement in hours (default 5 hours)
+% Set maximum duration since last measurement in hours (default 5 hours)  (inactive)
 max_search_time = 5;
 % Set search region (for prev. measured friction values) (defalt 0.04, gps
-% coords
+% coords (inactive)
 search_region = 0.04;
 
 % Error check
@@ -267,7 +261,7 @@ for mins=1:nummins
 end
 
 
-%% Clear data from v‰gverket
+%% Clear data from v√§gverket
 % Limit temperature
 newdataset(newdataset(:,indTempRoadVV) < -30,indTempRoadVV) = mean(newdataset(:,indTempRoadVV));
 % Limit humidity
@@ -396,5 +390,3 @@ end
 %% Save cleareddataset as .csv and .mat
 csvwrite(['ANN/cleareddataset' num2str(loop) '.csv'],cleareddataset)
 save(['cleareddataset' num2str(loop) '.mat'])
-
-end
