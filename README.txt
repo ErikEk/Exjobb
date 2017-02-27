@@ -29,8 +29,7 @@ Bygger Logistic regression modeller
 Bygger SVM modeller
 
 **Fil 3: build_supervised_dataset.m
-Bygger data set från riktiga friktionsmätningar och väderleksdata i likehet med 
-build_supervised_dataset_fake_friction.m.
+Sammanställer data set från riktiga friktionsmätningar och väderleksdata
 
 **Fil 4: **Fil 1: build_supervised_dataset_fake_friction.m
 Samma som ovan men med fejkade friktionsvärden.
