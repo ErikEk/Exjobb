@@ -12,6 +12,7 @@ TFANN.py
 Resursfiler:
 dataset_list.xlsx
 query_weatherstation_save_1435.csv, SMHITemp.csv - väderleksdata
+feature_list.txt - Listar olika feature uppstättningar
 
 **Fil 1: build_supervised_dataset_fake_friction.m
 Denna fil används för att bygga ett data set med fejkade friktionsvärden i kombination med 
@@ -54,6 +55,23 @@ numpy
 pandas
 sklearn
 
+**Fil 6: LoadCarData.m
+Laddar in data från bildata till newdataset
+
+**File 7: LoadWeatherData.m
+Laddar in data från väderdata till newdataset
+
+**File 8: LoadWeatherVVData.m
+Laddar in data från väderdata (VV) till newdataset
+
+**Fil 9: SaveData.m
+Sparar data till disk
+
+**Fil 10:DefineConstants.m
+Sätter värden för alla konstanter
+
+**Fil 11: ManupulateDataFroDebugging.m
+Ändrar data setet för att plotta vissa grafer.
 
 **Fil 6: dataset_list.xlsx
 Beskriver datastrukturen som skapas av build_supervised_dataset_fake_friction.m
