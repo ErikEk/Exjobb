@@ -5,6 +5,12 @@
 % then mapped into that same space and predicted to belong to a 
 % category based on which side of the gap they fall.
 
+fid = fopen('data/cleareddataset_709255549_or_709255550_or_709255551_slack0.csv', 'rt');
+raw = textscan(fid, repmat('%f',[1,65]),'Delimiter',',','headerLines', 0); %or whatever formatting your file is
+fclose(fid);
+
+cleareddataset = cell2mat(raw)
+
 
 %% Import the dataset
 testdataset = cleareddataset;
