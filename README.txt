@@ -23,7 +23,7 @@ feature_list.txt - Listar olika feature uppstättningar
 
 
 **Fil 1: logistic_regression.m
-Bygger Logistic regression modeller
+Bygger Logistic regression-modeller
 
 **Fil 2: run_svm.m
 Bygger SVM modeller
@@ -32,16 +32,9 @@ Bygger SVM modeller
 Sammanställer data set från riktiga friktionsmätningar och väderleksdata
 
 **Fil 4: **Fil 1: build_supervised_dataset_fake_friction.m
-Samma som ovan men med fejkade friktionsvärden.
 
 **Fil 5: TFANN.py
-Bygger ANN modeller
-För att köra TFANN.py behövs python 3 och följande paket:
-scipy.io
-tensorflow (https://www.tensorflow.org/get_started/os_setup)
-numpy
-pandas
-sklearn
+Bygger ANN-modeller
 
 **Fil 6: LoadCarData.m
 Laddar in data från bildata till newdataset
