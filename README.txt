@@ -37,13 +37,13 @@ Sammanställer data set från riktiga friktionsmätningar och väderleksdata
 Bygger ANN-modeller
 
 **Fil 6: LoadCarData.m
-Laddar in data från bildata till newdataset
+Laddar in data från bildata
 
 **File 7: LoadWeatherData.m
-Laddar in data från väderdata till newdataset
+Laddar in data från väderdata
 
 **File 8: LoadWeatherVVData.m
-Laddar in data från väderdata (VV) till newdataset
+Laddar in data från väderdata (VV)
 
 **Fil 9: SaveData.m
 Sparar data till disk
